@@ -1,6 +1,12 @@
 .center {
-  text-align: center;
-  font-weight: 600;
+  background-image: url(../../Img/banner/2.jpg);
+
+  height: 80vh;
+}
+.center h3,
+h1,
+h6 {
+  color: white;
 }
 
 .cartShoppingItem {

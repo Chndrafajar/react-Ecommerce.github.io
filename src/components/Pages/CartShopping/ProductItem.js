@@ -53,10 +53,22 @@ class ProductItem extends Component {
       );
     });
     return (
-      <Container className=" py-5">
-        <h3 className="center">Our items</h3>
-        <Row className="mt-3">{itemList}</Row>
-      </Container>
+      <div>
+        <div className="center">
+          <Container className="py-5  ">
+            <Row className="py-5">
+              <Col lg={6}>
+                <h1 className="font-wight-bold py-3  ">Unlock Your Potential With Good Fashion </h1>
+                <h6>Be Healty Creatif Fashion</h6>
+                <button className="btn1 mt-3">More From Us</button>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <Container>
+          <Row className="mt-3">{itemList}</Row>
+        </Container>
+      </div>
     );
   }
 }

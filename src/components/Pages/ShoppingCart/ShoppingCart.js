@@ -5,11 +5,13 @@ import { Container, Button } from "react-bootstrap";
 import "./cart.css";
 import { removeItem, addQuantity, subtractQuantity } from "../../actions/cartActions";
 import Recipe from "../Recipe/Recipe";
+import swal from "sweetalert";
 
 class ShoppingCart extends Component {
   //to remove the item completely
   handleRemove = (id) => {
     this.props.removeItem(id);
+    swal("Success!", "Successfully Removed Product From Cart!", "warning");
   };
   //to add the quantity
   handleAddQuantity = (id) => {
