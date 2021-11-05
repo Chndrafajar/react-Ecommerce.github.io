@@ -1,0 +1,45 @@
+.center {
+  text-align: center;
+  font-weight: 600;
+}
+
+.cartShoppingItem {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.cartInfo h3 {
+  color: #222;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cartInfo span {
+  font-size: 18px;
+}
+
+.IconStart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.IconStart span {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #f2b827;
+  position: relative;
+  display: inline-block;
+}
+
+.IconStart .bi {
+  font-size: 17px;
+  color: #f2b827;
+}
+
+.IconStart h4 {
+  font-size: 18px;
+  font-weight: 600;
+}

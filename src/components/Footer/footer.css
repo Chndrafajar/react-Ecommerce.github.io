@@ -1,0 +1,47 @@
+.Bottom input {
+  height: 45px;
+  width: 55%;
+  border: 2px solid white;
+  outline: none;
+  background: #0dcaf0;
+  color: black;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.Bottom::placeholder {
+  color: white;
+}
+
+.Bottom h5 {
+  font-weight: 600;
+}
+
+.Bottom p {
+  margin: 0;
+}
+
+.Bottom {
+  background-color: #0dcaf0;
+  color: white;
+}
+
+.btn2 {
+  height: 45px;
+  width: 100px;
+  background-color: white;
+  margin-left: -5px;
+  border: none;
+  font-weight: 600;
+}
+
+.IconSosial {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.bi {
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding-right: 5pxs;
+}

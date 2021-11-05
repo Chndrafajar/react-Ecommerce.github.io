@@ -1,0 +1,144 @@
+/* .cartItems {
+  margin: 30px auto;
+
+  background-color: #04fcd0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.CartHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+}
+
+.CartItemEmpty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cartItemList {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 5%;
+}
+
+.cartItemList img {
+  width: 100px;
+  height: auto;
+  border: 2px solid black;
+  margin-right: 10px;
+}
+
+.CartItemName,
+.cartItemFunction {
+  width: 25%;
+}
+
+
+
+
+.cartItemPrice {
+  display: flex;
+  letter-spacing: 2px;
+} */
+
+.CartItemBtn {
+  display: flex;
+}
+
+.CartItemBtn span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.CartItemBtn span .bi {
+  font-size: 14px;
+}
+
+.CartItemRemove .bi {
+  font-size: 14px;
+}
+
+.shoppingAdd {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shoppingAdd .bi {
+  font-size: 14px;
+}
+
+.listUserButton button:hover {
+  background-color: darkblue;
+}
+
+.listCartBottom {
+  padding: 20px;
+}
+
+.listCartBottom table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.listCartBottom table thead tr td {
+  font-weight: 600;
+  padding: 9px 5px;
+}
+
+.listCartBottom tbody tr td {
+  font-weight: 300;
+  font-size: 14px;
+  padding: 9px 5px;
+}
+
+.listCartBottom table thead tr {
+  border-bottom: 1px solid black;
+}
+
+.listCartBottom tbody tr {
+  border-bottom: 1px solid rgb(170, 163, 163);
+}
+
+.listCartBottom tbody tr:last-child {
+  border-bottom: none;
+}
+
+.listCartItem {
+  display: flex;
+}
+
+.listCartImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.listCartItem span {
+  margin-left: 10px;
+  margin-top: 18px;
+}
+
+.listCartId {
+  margin-left: 4px;
+}
+
+.cartItems {
+  overflow-x: auto;
+}

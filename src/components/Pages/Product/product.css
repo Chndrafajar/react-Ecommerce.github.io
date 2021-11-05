@@ -1,0 +1,210 @@
+.ProductTitle h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ProductTitle .IconNav .bi {
+  font-size: 12px;
+}
+
+.ProductTitle .TitleNav {
+  font-weight: 500;
+}
+
+.ProductTitle .TitleNav:hover {
+  color: #0dcaf0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.detailProduct {
+  display: flex;
+}
+
+.detailProductLeft {
+  flex: 3;
+  padding: 10px;
+}
+
+.detailProductLeft h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.detailProductRight {
+  flex: 2;
+  padding: 20px;
+}
+
+.detailProductRight h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.ProductHargaTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProductTitle .bi {
+  font-size: 10px;
+}
+
+.ProductHargaTitle h4 {
+  font-size: 22px;
+  color: #696969;
+}
+
+.IconStart .titleHarga {
+  color: #222;
+}
+
+.description {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #878787;
+  font-weight: 400;
+}
+
+.sizeItem h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sizeItem ul {
+  list-style: none;
+  margin: 10px -5px;
+  padding: 0;
+}
+
+.sizeItem ul li {
+  margin: 3px;
+  border-radius: 40px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.sizeItem ul li:hover {
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.sizeItem ul li span {
+  padding: 0;
+  display: block;
+  min-width: 18px;
+  min-height: 18px;
+  line-height: 18px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.numberItem {
+  min-width: 120px;
+  width: 120px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 40px;
+
+  text-align: center;
+}
+
+.numberInfo {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.buttonAdd {
+  width: 100%;
+  height: 40px;
+  border: none;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #0dcaf0;
+  color: white;
+  margin-top: 20px;
+}
+
+.btnToCart {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonAdd:hover {
+  background-color: black;
+  transition: 0.7s;
+}
+
+.InfoItem1 {
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.InfoItem1:hover {
+  color: #0dcaf0;
+  transition: 0.6s;
+}
+
+.InfoItem2 {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.InfoItem2:hover {
+  color: #0dcaf0;
+  transition: 0.6s;
+}
+
+.InfoItem3 {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.InfoItem3:hover {
+  color: #0dcaf0;
+  transition: 0.6s;
+}
+
+.information h4 {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #878787;
+  font-weight: 400;
+}
+
+.IconProductSosial {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.75;
+
+  font-weight: 400;
+  text-align: center;
+}
+
+.IconProductSosial span .bi {
+  margin: 0 2px 5px;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 27px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+}
+
+.IconProductSosial span .bi:hover {
+  color: #0dcaf0;
+}

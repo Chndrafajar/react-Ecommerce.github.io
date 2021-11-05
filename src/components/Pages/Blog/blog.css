@@ -1,0 +1,43 @@
+.CardBlog {
+  border: none;
+}
+
+.CardBlog h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.CardBlog h4 {
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.card {
+  border: none;
+}
+
+.CardBlogBottom {
+  margin-top: 20px;
+}
+
+.CardBlogBottom h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.CardBlogBottom h4 {
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.CardBlogBottom h4:hover {
+  color: #f05a66;
+  cursor: pointer;
+}
+
+.CardBlog h4:hover {
+  color: #f05a66;
+  cursor: pointer;
+}
