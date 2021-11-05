@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavbarComponents from "./components/Navbar/NavbarComponents";
 import Home from "./components/Pages/Home/Home";
-import ProductItem from "./components/Pages/CartShopping/ProductItem";
+import ProductItem from "./components/Pages/Market/ProductItem";
 import Registrasi from "./components/Pages/Registrasi/Registrasi";
 import Sukses from "./components/Pages/Sukses/Sukses";
 import ShoppingCart from "./components/Pages/ShoppingCart/ShoppingCart";
