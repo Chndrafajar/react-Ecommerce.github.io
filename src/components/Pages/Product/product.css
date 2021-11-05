@@ -208,3 +208,23 @@
 .IconProductSosial span .bi:hover {
   color: #0dcaf0;
 }
+
+.btnProduct {
+  display: flex;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.Imgleft {
+  cursor: pointer;
+}
+
+.Imgcenter {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.ImgRight {
+  margin-left: 10px;
+  cursor: pointer;
+}

@@ -1,12 +1,21 @@
 .center {
   background-image: url(../../Img/banner/2.jpg);
 
+  background-size: cover;
   height: 80vh;
+  width: 100%;
+  background-position: 50% 50%;
 }
-.center h3,
-h1,
-h6 {
+.center h1 {
+  font-size: 2rem;
   color: white;
+  font-weight: 700;
+}
+
+.center h6 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
 }
 
 .cartShoppingItem {

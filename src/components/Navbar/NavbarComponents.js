@@ -46,7 +46,7 @@ export default function NavbarComponents() {
                   {" "}
                   <span className="Icon3">
                     <i class="bi bi-cart2"></i>
-                    <span className="navIcon">2</span>
+                    <span className="navIcon"></span>
                   </span>
                 </Link>
               </div>

@@ -1,11 +1,14 @@
 import React from "react";
-import { Container, Navbar, Tabs, Tab, Carousel } from "react-bootstrap";
+import { Container, Navbar, Tabs, Tab, Col, Card, Row } from "react-bootstrap";
 import "./product.css";
+import { Link, Switch, Route, Redirect } from "react-router-dom";
 import Description from "./TabContent/Description";
 import Information from "./TabContent/Information";
 import Review from "./TabContent/Review";
 import Footer from "../../Footer/Footer";
-import ProductItem from "../CartShopping/ProductItem";
+import ProductDetail1 from "./ProductDetail/ProductDetail1";
+import ProductDetail2 from "./ProductDetail/ProductDetail2";
+import ProductDetail3 from "./ProductDetail/ProductDetail3";
 
 export default function Product() {
   return (
@@ -29,17 +32,31 @@ export default function Product() {
           <div className="detailProduct py-3">
             <div className="detailProductLeft">
               <h1>Clothes Fashion</h1>
-              <Carousel className="imageCss">
-                <Carousel.Item interval={1000}>
-                  <img src="asset/shop/26.jpg" alt="First slide" width="100%" height="700px" />
-                </Carousel.Item>
-                <Carousel.Item interval={500}>
-                  <img src="asset/shop/24.jpg" alt="Second slide" width="100%" height="700px" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src="asset/shop/25.jpg" alt="Third slide" width="100%" height="700px" />
-                </Carousel.Item>
-              </Carousel>
+              <div>
+                <Switch>
+                  <Route path="/productDetail1" component={ProductDetail1} />
+                  <Route path="/productDetail2" component={ProductDetail2} />
+                  <Route path="/productDetail3" component={ProductDetail3} />
+                  <Redirect to="/productDetail2" />
+                </Switch>
+              </div>
+              <div className="btnProduct mt-2">
+                <Link to="/productDetail2">
+                  <div className="Imgleft">
+                    <img src="asset/shop/25.jpg" alt="" width="80px" height="80px" />
+                  </div>
+                </Link>
+                <Link to="/productDetail1">
+                  <div className="Imgcenter">
+                    <img src="asset/shop/24.jpg" alt="" width="80px" height="80px" />
+                  </div>
+                </Link>
+                <Link to="/productDetail3">
+                  <div className="ImgRight">
+                    <img src="asset/shop/26.jpg" alt="" width="80px" height="80px" />
+                  </div>
+                </Link>
+              </div>
             </div>
             <div className="detailProductRight">
               <h1>By Clothes Fashion</h1>
@@ -147,8 +164,134 @@ export default function Product() {
         </Container>
       </div>
 
-      <div>
-        <ProductItem />
+      <div className="Product">
+        <Container>
+          <Row className="py-2">
+            <Col lg={5} className=" m-auto text-center">
+              <h1>New productw</h1>
+              <h6 style={{ color: "blue" }}>Be Healty Creatif Fashion</h6>
+            </Col>
+          </Row>
+          <Row className="Row" xs={2}>
+            <Col lg={3} className="text-center">
+              <Card className="Card  border-0  mb-2">
+                <div className="imgArea">
+                  <img src="asset/shop/9.jpg" alt="" className="img-fluid" />
+                </div>
+
+                <h5 className="mt-3">bag Fashion</h5>
+
+                <div className="IconStartHome ">
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                </div>
+                <h6>$29.99</h6>
+              </Card>
+            </Col>
+            <Col lg={3} className="text-center">
+              <Card className="Card   border-0  mb-2">
+                <div className="imgArea">
+                  <img src="asset/shop/2.jpg" alt="" className="img-fluid" />
+                </div>
+
+                <h5 className="mt-3">Shoe Fashion</h5>
+
+                <div className="IconStartHome ">
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                </div>
+                <h6>$29.99</h6>
+              </Card>
+            </Col>
+            <Col lg={3} className="text-center">
+              <Card className="Card  border-0  mb-2">
+                <div className="imgArea">
+                  <img src="asset/shop/16.jpg" alt="" className="img-fluid" />
+                </div>
+
+                <h5 className="mt-3">Clothes Fashion</h5>
+
+                <div className="IconStartHome ">
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                </div>
+                <h6>$29.99</h6>
+              </Card>
+            </Col>
+            <Col lg={3} className="text-center">
+              <Card className="Card  border-0  mb-2">
+                <div className="imgArea">
+                  <img src="asset/shop/4.jpg" alt="" className="img-fluid" />
+                </div>
+
+                <h5 className="mt-3">Shoe Fashion</h5>
+
+                <div className="IconStartHome ">
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                </div>
+                <h6>$29.99</h6>
+              </Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6} className="text-center m-auto mt-3">
+              <button className="btn1">Click For More</button>
+            </Col>
+          </Row>
+        </Container>
       </div>
 
       <div>

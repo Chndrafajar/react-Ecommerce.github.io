@@ -6,6 +6,18 @@ import "./blog.css";
 export default function Blog() {
   return (
     <>
+      <div className="blogTop">
+        <Container className="py-5  ">
+          <Row className="py-3">
+            <Col lg={6}>
+              <h1>Find Trending Products Here! </h1>
+              <h6>Be Healty Creatif Fashion</h6>
+              <button className="btn1 mt-3">More From Us</button>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
       <div>
         <Container className="py-5">
           <Row>

@@ -41,3 +41,23 @@
   color: #f05a66;
   cursor: pointer;
 }
+
+.blogTop {
+  background-image: url(../../Img/banner/parallax.jpg);
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  background-position: 50% 50%;
+}
+
+.blogTop h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+}
+
+.blogTop h6 {
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+}

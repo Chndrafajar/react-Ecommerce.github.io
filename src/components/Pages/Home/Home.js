@@ -81,7 +81,7 @@ export default function Home() {
       <div className="Product">
         <Container>
           <Row className="py-2">
-            <Col lg={5} className=" m-auto text-center">
+            <Col lg={5} xs={4} className=" m-auto text-center">
               <h1>Product Trending</h1>
               <h6 style={{ color: "blue" }}>Be Healty Creatif Fashion</h6>
             </Col>

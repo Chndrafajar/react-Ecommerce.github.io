@@ -4,6 +4,9 @@ import { connect } from "react-redux";
 import "./productItem.css";
 import { addToCart } from "../../actions/cartActions";
 import swal from "sweetalert";
+import { Link, Switch, Route } from "react-router-dom";
+import ShopProduct from "./ShopProduct/ShopProduct";
+import Footer from "../../Footer/Footer";
 
 class ProductItem extends Component {
   handleClick = (id) => {
@@ -57,8 +60,8 @@ class ProductItem extends Component {
         <div className="center">
           <Container className="py-5  ">
             <Row className="py-5">
-              <Col lg={6}>
-                <h1 className="font-wight-bold py-3  ">Unlock Your Potential With Good Fashion </h1>
+              <Col lg={6} className="mt-2">
+                <h1>There Are Various Kinds Of The Best Fashion Variants Here! </h1>
                 <h6>Be Healty Creatif Fashion</h6>
                 <button className="btn1 mt-3">More From Us</button>
               </Col>
@@ -66,8 +69,24 @@ class ProductItem extends Component {
           </Container>
         </div>
         <Container>
-          <Row className="mt-3">{itemList}</Row>
+          <Row className="mt-3">
+            {itemList}
+            <Switch>
+              <Route path="/shopProductNew" component={ShopProduct} />
+            </Switch>
+          </Row>
+          <Row>
+            <Col lg={6} className="text-center m-auto mt-3">
+              <Link to="/shopProductNew">
+                {" "}
+                <button className="btn1">Load More</button>
+              </Link>
+            </Col>
+          </Row>
         </Container>
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }

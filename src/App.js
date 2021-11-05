@@ -23,15 +23,27 @@ export default function App() {
           <Route path="/" exact component={Home} />
           <Route path="/signin" component={SignIn} />
           <Route path="/product" component={Product} />
+          <Route path="/productDetail1" component={Product} />
+          <Route path="/productDetail2" component={Product} />
+          <Route path="/productDetail3" component={Product} />
           <Route path="/market">
+            <ProductItem />
+          </Route>
+          <Route path="/shopProductNew">
             <ProductItem />
           </Route>
           <Route path="/signin" component={SignIn} />
           <Route path="/registrasi" component={Registrasi} />
           <Route path="/succes" component={Sukses} />
           <Route path="/portfolio" component={PortFolio} />
+          <Route path="/portFolioItem1" component={PortFolio} />
+          <Route path="/portFolioItem2" component={PortFolio} />
+          <Route path="/portFolioItem3" component={PortFolio} />
+          <Route path="/portFolioItem4" component={PortFolio} />
+          <Route path="/portFolioItem5" component={PortFolio} />
           <Route path="/blog" component={Blog} />
           <Route path="/shopingcart" component={ShoppingCart} />
+
           <Route component={NotFound} />
         </Switch>
       </div>

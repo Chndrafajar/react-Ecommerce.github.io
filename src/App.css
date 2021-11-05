@@ -97,6 +97,9 @@ html {
   .cartItems {
     width: 100%;
   }
+  .btnPorffolio {
+    overflow-x: auto;
+  }
 }
 
 @media (max-width: 468px) {
