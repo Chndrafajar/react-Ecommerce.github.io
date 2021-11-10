@@ -168,7 +168,7 @@ export default function Product() {
         <Container>
           <Row className="py-2">
             <Col lg={5} className=" m-auto text-center">
-              <h1>New productw</h1>
+              <h1>New product</h1>
               <h6 style={{ color: "blue" }}>Be Healty Creatif Fashion</h6>
             </Col>
           </Row>

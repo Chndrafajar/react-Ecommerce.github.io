@@ -5,7 +5,7 @@ export default function ShopProduct() {
   return (
     <div>
       <Row>
-        <Col lg={3} xs={6} className="text-center">
+        <Col lg={3} xs={6} md={4} className="text-center">
           <Card className="Card  border-0  mb-2">
             <div className="imgArea">
               <img src="asset/shop/24.jpg" alt="" className="img-fluid" />
@@ -33,7 +33,7 @@ export default function ShopProduct() {
             <h6>$29.99</h6>
           </Card>
         </Col>
-        <Col lg={3} xs={6} className="text-center">
+        <Col lg={3} xs={6} md={4} className="text-center">
           <Card className="Card   border-0  mb-2">
             <div className="imgArea">
               <img src="asset/shop/25.jpg" alt="" className="img-fluid" />
@@ -61,7 +61,7 @@ export default function ShopProduct() {
             <h6>$29.99</h6>
           </Card>
         </Col>
-        <Col lg={3} xs={6} className="text-center">
+        <Col lg={3} xs={6} md={4} className="text-center">
           <Card className="Card  border-0  mb-2">
             <div className="imgArea">
               <img src="asset/shop/15.jpg" alt="" className="img-fluid" />
@@ -89,7 +89,7 @@ export default function ShopProduct() {
             <h6>$29.99</h6>
           </Card>
         </Col>
-        <Col lg={3} xs={6} className="text-center">
+        <Col lg={3} xs={6} md={4} className="text-center">
           <Card className="Card  border-0  mb-2">
             <div className="imgArea">
               <img src="asset/shop/11.jpg" alt="" className="img-fluid" />
@@ -117,7 +117,7 @@ export default function ShopProduct() {
             <h6>$29.99</h6>
           </Card>
         </Col>
-        <Col lg={3} xs={6} className="text-center">
+        <Col lg={3} xs={6} md={4} className="text-center">
           <Card className="Card  border-0  mb-2">
             <div className="imgArea">
               <img src="asset/shop/16.jpg" alt="" className="img-fluid" />
@@ -145,7 +145,7 @@ export default function ShopProduct() {
             <h6>$29.99</h6>
           </Card>
         </Col>
-        <Col lg={3} xs={6} className="text-center">
+        <Col lg={3} xs={6} md={4} className="text-center">
           <Card className="Card   border-0  mb-2">
             <div className="imgArea">
               <img src="asset/shop/14.jpg" alt="" className="img-fluid" />
@@ -173,7 +173,7 @@ export default function ShopProduct() {
             <h6>$29.99</h6>
           </Card>
         </Col>
-        <Col lg={3} xs={6} className="text-center">
+        <Col lg={3} xs={6} md={4} className="text-center">
           <Card className="Card  border-0  mb-2">
             <div className="imgArea">
               <img src="asset/shop/10.jpg" alt="" className="img-fluid" />
@@ -201,7 +201,7 @@ export default function ShopProduct() {
             <h6>$29.99</h6>
           </Card>
         </Col>
-        <Col lg={3} xs={6} className="text-center">
+        <Col lg={3} xs={6} md={4} className="text-center">
           <Card className="Card  border-0  mb-2">
             <div className="imgArea">
               <img src="asset/shop/26.jpg" alt="" className="img-fluid" />

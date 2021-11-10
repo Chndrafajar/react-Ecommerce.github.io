@@ -128,3 +128,12 @@ h6 {
   font-size: 17px;
   color: #f2b827;
 }
+
+@media (max-width: 768px) {
+  .CarousalItem h3 {
+    font-size: 20px;
+  }
+  .CarousalItem h1 {
+    font-size: 25px;
+  }
+}

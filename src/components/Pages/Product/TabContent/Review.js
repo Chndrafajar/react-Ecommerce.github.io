@@ -1,6 +1,6 @@
 import React from "react";
 import "./review.css";
-import { Container, Card, Row, Col, Dropdown, DropdownButton } from "react-bootstrap";
+import { Container, Card, Row, Col } from "react-bootstrap";
 
 export default function Review() {
   return (
@@ -121,20 +121,6 @@ export default function Review() {
             </tr>
           </table>
         </div>
-      </div>
-
-      <div className="reviewCardFilter">
-        <Container className="py-2">
-          <Row>
-            <Col lg={5} className=" m-auto text-center">
-              <DropdownButton variant="light" title="Sort By">
-                <Dropdown.Item as="button">Latest</Dropdown.Item>
-                <Dropdown.Item as="button">Oldest</Dropdown.Item>
-                <Dropdown.Item as="button">Images</Dropdown.Item>
-              </DropdownButton>
-            </Col>
-          </Row>
-        </Container>
       </div>
 
       <div className="py-3">

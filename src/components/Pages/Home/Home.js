@@ -24,7 +24,7 @@ export default function Home() {
             <Carousel.Caption>
               <div className="CarousalItem">
                 <h3>SUMMER 2020</h3>
-                <h1>New Arrival Collection</h1>
+                <h1>New Arrival </h1>
                 <Button variant="dark">Explore Now</Button>
               </div>
             </Carousel.Caption>
