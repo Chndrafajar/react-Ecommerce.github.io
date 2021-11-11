@@ -123,17 +123,8 @@
 }
 
 .reviewCard {
-  padding: 1px 16px 1px 1px;
-  border-radius: 50px;
-  font-weight: 700;
-  text-align: left;
-  line-height: 33px;
-
-  min-width: 80px;
-  margin: 22px 0 0 14px;
-  background: #fff;
-
   width: max-content;
+  display: flex;
 }
 
 .reviewCardItem {
@@ -146,12 +137,15 @@
   height: 25px;
   line-height: 25px;
   font-size: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .reviewCardName {
-  bottom: 0;
+  margin-left: 10px;
   font-size: 18px;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .IconStartReview {
@@ -211,4 +205,25 @@
 .reviewIconInfo .bi {
   font-size: 18px;
   color: #f2b827;
+}
+
+.starCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.reviewCol {
+  margin: 10px;
+}
+
+@media (max-width: 968px) {
+  .starCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 468px) {
+  .starCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

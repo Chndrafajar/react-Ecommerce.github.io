@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./signin.css";
 import { Link } from "react-router-dom";
 
@@ -6,11 +6,11 @@ export default function SignIn() {
   return (
     <div>
       <Container fluid>
-        <Row className="py-5">
-          <Col lg={6} className="py-5">
+        <div className="SignUp">
+          <div className="SignLeft">
             <img src="asset/item/sigin.png" alt="" width="100%" />
-          </Col>
-          <Col lg={5} className="py-3">
+          </div>
+          <div className="SignRight">
             <div className="formContainer">
               <div className="signin-signup">
                 <form>
@@ -50,8 +50,8 @@ export default function SignIn() {
                 </form>
               </div>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Container>
     </div>
   );

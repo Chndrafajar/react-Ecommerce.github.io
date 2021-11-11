@@ -1,64 +1,90 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./portfolio.css";
-import { Link, Switch, Route, Redirect } from "react-router-dom";
-import PortFolioItem1 from "./PortfolioItem/PortFolioItem1";
-import PortFolioItem2 from "./PortfolioItem/PortFolioItem2";
-import PortFolioItem3 from "./PortfolioItem/PortFolioItem3";
-import PortFolioItem4 from "./PortfolioItem/PortFolioItem4";
-import PortFolioItem5 from "./PortfolioItem/PortFolioItem5";
 import Footer from "../../Footer/Footer";
+import { useState, useEffect } from "react";
+import PortfolioList from "./PortfolioList/PortfolioList";
+import { allProduct, Clothes, watches, Shoes, Accesories } from "./PortfolioItem/data";
 
 export default function PortFolio() {
+  const [select, setSelect] = useState("all product");
+  const [data, setData] = useState([]);
+
+  const list = [
+    {
+      id: "all product",
+      title: "All Product",
+    },
+    {
+      id: "shoes",
+      title: "Shoes",
+    },
+    {
+      id: "accesories",
+      title: "Accesories",
+    },
+    {
+      id: "watches",
+      title: "Watches",
+    },
+    {
+      id: "clothes",
+      title: "Clothes",
+    },
+  ];
+
+  useEffect(() => {
+    switch (select) {
+      case "all product":
+        setData(allProduct);
+        break;
+      case "shoes":
+        setData(Shoes);
+        break;
+      case "accesories":
+        setData(Accesories);
+        break;
+      case "watches":
+        setData(watches);
+        break;
+      case "clothes":
+        setData(Clothes);
+        break;
+      default:
+        setData(allProduct);
+    }
+  }, [select]);
+
   return (
     <>
       <div>
         <Container className="py-3">
-          <Row className="py-2">
-            <Col lg={7} className=" m-auto text-center">
-              <div className="btnPorffolio">
-                <Link to="/portFolioItem1">
-                  {" "}
-                  <button className="All">
-                    ALL<span className="bagIcon">(12)</span>
-                  </button>
-                </Link>
-                <Link to="/portFolioItem2">
-                  <button className="shoes">
-                    Shoes<span className="bagIcon">(3)</span>
-                  </button>
-                </Link>
-                <Link to="/portFolioItem3">
-                  <button className="Accesories">
-                    Accesories<span className="bagIcon">(3)</span>
-                  </button>
-                </Link>
-                <Link to="/portFolioItem4">
-                  <button className="Watches">
-                    Watches<span className="bagIcon">(3)</span>
-                  </button>
-                </Link>
-                <Link to="/portFolioItem5">
-                  <button className="Clothes">
-                    Clothes<span className="bagIcon">(3)</span>
-                  </button>
-                </Link>
-              </div>
-            </Col>
-          </Row>
+          <div className="portfolioList">
+            <ul>
+              {list.map((item) => (
+                <PortfolioList title={item.title} active={select === item.id} setSelect={setSelect} id={item.id} />
+              ))}
+            </ul>
+          </div>
         </Container>
       </div>
-      <div className="portfolio">
+
+      <div>
         <Container>
-          <Row>
-            <Switch>
-              <Route path="/portFolioItem1" component={PortFolioItem1} />
-              <Route path="/portFolioItem2" component={PortFolioItem2} />
-              <Route path="/portFolioItem3" component={PortFolioItem3} />
-              <Route path="/portFolioItem4" component={PortFolioItem4} />
-              <Route path="/portFolioItem5" component={PortFolioItem5} />
-              <Redirect to="/portFolioItem1" />
-            </Switch>
-          </Row>
+          <div className="portfolio">
+            {data.map((d) => (
+              <div className="portfolioCard">
+                <div className="blogCard ">
+                  <div className="imgArea">
+                    <img src={d.img} alt={d.title} className="img-fluid" />
+                  </div>
+                  <h5 className="mt-3">By Creatif Fashion</h5>
+                  <h4 className="portfolioH4">
+                    <span>Women</span>, <span>Clothes</span>, <span>Watches</span>, <span>Shoes</span>
+                  </h4>
+                </div>
+              </div>
+            ))}
+          </div>
         </Container>
       </div>
 

@@ -1,0 +1,31 @@
+.registrasi {
+  display: flex;
+}
+
+.registrasiLeft {
+  flex: 1;
+}
+
+.registrasiRight {
+  flex: 1;
+}
+
+.signup form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0dcaf0;
+  border-radius: 10px;
+  height: 550px;
+  margin-top: 30px;
+}
+
+@media (max-width: 982px) {
+  .registrasi {
+    flex-direction: column;
+  }
+  .signup form {
+    width: auto;
+  }
+}

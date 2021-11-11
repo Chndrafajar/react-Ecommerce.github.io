@@ -125,9 +125,9 @@ export default function Review() {
 
       <div className="py-3">
         <Container>
-          <Row>
-            <Col xs={12} lg={3} className="reviewCol">
-              <Card>
+          <div className="starCard">
+            <div className="reviewCol">
+              <div className="card">
                 <div className="reviewCard">
                   <div className="reviewCardItem">d</div>
                   <div className="reviewCardName">Destak</div>
@@ -172,10 +172,10 @@ export default function Review() {
                     </span>
                   </div>
                 </div>
-              </Card>
-            </Col>
-            <Col xs={12} lg={3} className="reviewCol">
-              <Card>
+              </div>
+            </div>
+            <div className="reviewCol">
+              <div className="card">
                 <div className="reviewCard">
                   <div className="reviewCardItem">d</div>
                   <div className="reviewCardName">Destak</div>
@@ -220,10 +220,10 @@ export default function Review() {
                     </span>
                   </div>
                 </div>
-              </Card>
-            </Col>
-            <Col xs={12} lg={3} className="reviewCol">
-              <Card>
+              </div>
+            </div>
+            <div className="reviewCol">
+              <div className="card">
                 <div className="reviewCard">
                   <div className="reviewCardItem">d</div>
                   <div className="reviewCardName">Destak</div>
@@ -268,10 +268,10 @@ export default function Review() {
                     </span>
                   </div>
                 </div>
-              </Card>
-            </Col>
-            <Col xs={12} lg={3} className="reviewCol">
-              <Card>
+              </div>
+            </div>
+            <div className="reviewCol">
+              <div className="card">
                 <div className="reviewCard">
                   <div className="reviewCardItem">d</div>
                   <div className="reviewCardName">Destak</div>
@@ -316,9 +316,9 @@ export default function Review() {
                     </span>
                   </div>
                 </div>
-              </Card>
-            </Col>
-          </Row>
+              </div>
+            </div>
+          </div>
         </Container>
       </div>
     </>

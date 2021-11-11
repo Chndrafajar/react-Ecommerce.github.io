@@ -1,15 +1,16 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./registrasi.css";
 
 export default function Registrasi() {
   return (
     <div>
       <Container fluid>
-        <Row className="py-5">
-          <Col lg={6} className="py-5">
+        <div className="registrasi">
+          <div className="registrasiLeft">
             <img src="asset/brand/signin.png" alt="" width="100%" />
-          </Col>
-          <Col lg={5} className="py-2">
+          </div>
+          <div className="registrasiRight">
             <div className="formContainer">
               <div className="signup">
                 <form>
@@ -53,8 +54,8 @@ export default function Registrasi() {
                 </form>
               </div>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Container>
     </div>
   );

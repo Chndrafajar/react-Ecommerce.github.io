@@ -1,16 +1,49 @@
 import React from "react";
 import { Container, Navbar, Tabs, Tab, Col, Card, Row } from "react-bootstrap";
 import "./product.css";
-import { Link, Switch, Route, Redirect } from "react-router-dom";
 import Description from "./TabContent/Description";
 import Information from "./TabContent/Information";
 import Review from "./TabContent/Review";
 import Footer from "../../Footer/Footer";
-import ProductDetail1 from "./ProductDetail/ProductDetail1";
-import ProductDetail2 from "./ProductDetail/ProductDetail2";
-import ProductDetail3 from "./ProductDetail/ProductDetail3";
+import { Product1, Product2, Product3 } from "./ProductDetail/data";
+import { useState, useEffect } from "react";
+import ProductList from "./ProductList";
 
 export default function Product() {
+  const [select, setSelect] = useState("product1");
+  const [data, setData] = useState([]);
+
+  const list = [
+    {
+      id: "product1",
+      title: "Product1",
+    },
+    {
+      id: "product2",
+      title: "Product2",
+    },
+    {
+      id: "product3",
+      title: "Product3",
+    },
+  ];
+
+  useEffect(() => {
+    switch (select) {
+      case "product1":
+        setData(Product1);
+        break;
+      case "product2":
+        setData(Product2);
+        break;
+      case "product3":
+        setData(Product3);
+        break;
+      default:
+        setData(Product1);
+    }
+  }, [select]);
+
   return (
     <>
       <div className="ProductTitle mt-3">
@@ -32,30 +65,18 @@ export default function Product() {
           <div className="detailProduct py-3">
             <div className="detailProductLeft">
               <h1>Clothes Fashion</h1>
-              <div>
-                <Switch>
-                  <Route path="/productDetail1" component={ProductDetail1} />
-                  <Route path="/productDetail2" component={ProductDetail2} />
-                  <Route path="/productDetail3" component={ProductDetail3} />
-                  <Redirect to="/productDetail2" />
-                </Switch>
-              </div>
-              <div className="btnProduct mt-2">
-                <Link to="/productDetail2">
-                  <div className="Imgleft">
-                    <img src="asset/shop/25.jpg" alt="" width="80px" height="80px" />
-                  </div>
-                </Link>
-                <Link to="/productDetail1">
-                  <div className="Imgcenter">
-                    <img src="asset/shop/24.jpg" alt="" width="80px" height="80px" />
-                  </div>
-                </Link>
-                <Link to="/productDetail3">
-                  <div className="ImgRight">
-                    <img src="asset/shop/26.jpg" alt="" width="80px" height="80px" />
-                  </div>
-                </Link>
+              {data.map((d) => (
+                <div>
+                  <img src={d.img} alt={d.title} width="100%" height="70%" />
+                </div>
+              ))}
+
+              <div className="productList">
+                <ul>
+                  {list.map((item) => (
+                    <ProductList title={item.title} active={select === item.id} setSelect={setSelect} id={item.id} />
+                  ))}
+                </ul>
               </div>
             </div>
             <div className="detailProductRight">

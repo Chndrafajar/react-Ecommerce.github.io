@@ -1,0 +1,10 @@
+.portfoliolist.active {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .portfoliolist {
+    margin-left: 35px;
+  }
+}

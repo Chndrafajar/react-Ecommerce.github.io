@@ -61,3 +61,62 @@
   color: black;
   font-weight: 700;
 }
+
+.blogItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 10px;
+}
+
+.blogCard {
+  margin-left: 25px;
+}
+
+.blogCard {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.blogTitle {
+  width: 500px;
+}
+
+.btnBlog {
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.btnBlog:hover {
+  background-color: rgb(12, 12, 170);
+}
+
+.blogH4:hover {
+  color: #0dcaf0;
+  cursor: pointer;
+}
+
+@media (max-width: 428px) {
+  .blogItem {
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 20px;
+  }
+  .btnBlog {
+    height: 45px;
+    width: 40%;
+  }
+}
+
+@media (max-width: 620px) {
+  .blogTitle {
+    width: 300px;
+    margin-top: 40px;
+  }
+}
