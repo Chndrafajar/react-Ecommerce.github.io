@@ -58,3 +58,65 @@
   font-size: 18px;
   font-weight: 600;
 }
+
+.btnMrket {
+  height: 45px;
+  width: 200px;
+  border: none;
+  outline: none;
+  background-color: #0dcaf0;
+  color: white;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: 1s;
+}
+
+.filterProductLeft {
+  font-size: 22px;
+  color: grey;
+  cursor: pointer;
+}
+
+.filterProductLeft:hover {
+  color: #0dcaf0;
+}
+
+.filterProductLeft .bi {
+  font-size: 23px;
+}
+
+.filterProduct {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filterProductRight {
+  color: grey;
+}
+
+.filterProductRight select {
+  width: 200px;
+  height: 40px;
+  color: grey;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+@media (max-width: 478px) {
+  .filterProduct {
+    flex-direction: column;
+  }
+  .filterProductRight select {
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .filterProductLeft {
+    font-size: 15px;
+  }
+  .filterProductLeft .bi {
+    font-size: 16px;
+  }
+}
