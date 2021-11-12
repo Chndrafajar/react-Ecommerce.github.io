@@ -10,10 +10,6 @@ html {
   border: 2px solid blue;
 }
 
-* {
-  overflow-x: hidden;
-}
-
 .pages {
   width: auto;
 }
