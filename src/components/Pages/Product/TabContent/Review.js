@@ -1,6 +1,6 @@
 import React from "react";
 import "./review.css";
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 export default function Review() {
   return (

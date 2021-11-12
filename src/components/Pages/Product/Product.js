@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar, Tabs, Tab, Col, Card, Row } from "react-bootstrap";
+import { Container, Navbar, Tabs, Tab } from "react-bootstrap";
 import "./product.css";
 import Description from "./TabContent/Description";
 import Information from "./TabContent/Information";
@@ -185,136 +185,140 @@ export default function Product() {
         </Container>
       </div>
 
+      <div className="productTitle">
+        <div className="productTitleItem">
+          <h1>New product</h1>
+          <h6 style={{ color: "blue" }}>Be Healty Creatif Fashion</h6>
+        </div>
+      </div>
+
       <div className="Product">
         <Container>
-          <Row className="py-2">
-            <Col lg={5} className=" m-auto text-center">
-              <h1>New product</h1>
-              <h6 style={{ color: "blue" }}>Be Healty Creatif Fashion</h6>
-            </Col>
-          </Row>
-          <Row className="Row" xs={2}>
-            <Col lg={3} className="text-center">
-              <Card className="Card  border-0  mb-2">
+          <div className="newProductItem">
+            <div className="newProductCard">
+              <div className="Card  border-0  mb-2">
                 <div className="imgArea">
                   <img src="asset/shop/9.jpg" alt="" className="img-fluid" />
                 </div>
+                <div className="textCard">
+                  <h5 className="mt-3">bag Fashion</h5>
 
-                <h5 className="mt-3">bag Fashion</h5>
-
-                <div className="IconStartHome ">
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
+                  <div className="IconStartHome ">
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                  </div>
+                  <h6>$29.99</h6>
                 </div>
-                <h6>$29.99</h6>
-              </Card>
-            </Col>
-            <Col lg={3} className="text-center">
-              <Card className="Card   border-0  mb-2">
+              </div>
+            </div>
+            <div className="newProductCard">
+              <div className="Card   border-0  mb-2">
                 <div className="imgArea">
                   <img src="asset/shop/2.jpg" alt="" className="img-fluid" />
                 </div>
+                <div className="textCard">
+                  <h5 className="mt-3">Shoe Fashion</h5>
 
-                <h5 className="mt-3">Shoe Fashion</h5>
-
-                <div className="IconStartHome ">
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
+                  <div className="IconStartHome ">
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                  </div>
+                  <h6>$29.99</h6>
                 </div>
-                <h6>$29.99</h6>
-              </Card>
-            </Col>
-            <Col lg={3} className="text-center">
-              <Card className="Card  border-0  mb-2">
+              </div>
+            </div>
+            <div className="newProductCard">
+              <div className="Card  border-0  mb-2">
                 <div className="imgArea">
                   <img src="asset/shop/16.jpg" alt="" className="img-fluid" />
                 </div>
+                <div className="textCard">
+                  <h5 className="mt-3">Clothes Fashion</h5>
 
-                <h5 className="mt-3">Clothes Fashion</h5>
-
-                <div className="IconStartHome ">
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
+                  <div className="IconStartHome ">
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                  </div>
+                  <h6>$29.99</h6>
                 </div>
-                <h6>$29.99</h6>
-              </Card>
-            </Col>
-            <Col lg={3} className="text-center">
-              <Card className="Card  border-0  mb-2">
+              </div>
+            </div>
+            <div className="newProductCard">
+              <div className="Card  border-0  mb-2">
                 <div className="imgArea">
                   <img src="asset/shop/4.jpg" alt="" className="img-fluid" />
                 </div>
+                <div className="textCard">
+                  <h5 className="mt-3">Shoe Fashion</h5>
 
-                <h5 className="mt-3">Shoe Fashion</h5>
-
-                <div className="IconStartHome ">
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
+                  <div className="IconStartHome ">
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                  </div>
+                  <h6>$29.99</h6>
                 </div>
-                <h6>$29.99</h6>
-              </Card>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={6} className="text-center m-auto mt-3">
-              <button className="btn1">Click For More</button>
-            </Col>
-          </Row>
+              </div>
+            </div>
+          </div>
         </Container>
       </div>
-
+      <div>
+        <div className="btnCardProduct">
+          <button className="btn1">Click For More</button>
+        </div>
+      </div>
       <div>
         <Footer />
       </div>
