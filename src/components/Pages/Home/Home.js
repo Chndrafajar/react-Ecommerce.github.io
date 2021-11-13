@@ -1,5 +1,5 @@
 import "./home.css";
-import { Container, Row, Col, Carousel, Button, Form } from "react-bootstrap";
+import { Container, Carousel, Button } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
 
 export default function Home() {
