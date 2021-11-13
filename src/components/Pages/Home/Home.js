@@ -49,7 +49,7 @@ export default function Home() {
               <div>
                 <img src="asset/shop/23.jpg" alt="" />
                 <div className="btnHome">
-                  <button variant="dark">Women</button>
+                  <span>Women</span>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function Home() {
               <div>
                 <img src="asset/shop/15.jpg" alt="" />
                 <div className="btnHome">
-                  <button variant="dark">Accesories</button>
+                  <span>Accesories</span>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
               <div>
                 <img src="asset/shop/4.jpg" alt="" />
                 <div className="btnHome">
-                  <button variant="dark">Footwear</button>
+                  <span>Footwear</span>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function Home() {
               <div>
                 <img src="asset/shop/1.jpg" alt="" />
                 <div className="btnHome">
-                  <button variant="dark">Watches</button>
+                  <span>Watches</span>
                 </div>
               </div>
             </div>
@@ -84,7 +84,9 @@ export default function Home() {
       <div className="productTitle">
         <div className="productTitleItem">
           <h1>Product Trending</h1>
-          <h6 style={{ color: "blue" }}>Be Healty Creatif Fashion</h6>
+          <h6 className="homeH6" style={{ color: "blue" }}>
+            Be Healty Creatif Fashion
+          </h6>
         </div>
       </div>
 
@@ -246,65 +248,56 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div>
+            <div className="btnCardHome">
+              <button className="btn1">Shop More</button>
+            </div>
+          </div>
         </Container>
-      </div>
-
-      <div>
-        <div className="btnCardProduct">
-          <button className="btn1">Shop More</button>
-        </div>
       </div>
 
       <div className="apple py-5 ">
         <Container className="py-5  ">
-          <Row className="py-5">
-            <Col lg={6}>
-              <h1 className="font-wight-bold py-3  ">Unlock Your Potential With Good Fashion </h1>
+          <div className="blog">
+            <div className="blogTitle">
+              <h1 className="h1Home">Unlock Your Potential With Good Fashion </h1>
               <h6>Be Healty Creatif Fashion</h6>
-              <button className="btn1 mt-3">More From Us</button>
-            </Col>
-          </Row>
+              <button className="btnBlog mt-3">More From Us</button>
+            </div>
+          </div>
         </Container>
       </div>
 
       <div className="contact py-5">
         <Container className="py-5">
-          <Row>
-            <Col lg={5} className="m-auto text-center">
+          <div className="productTitle">
+            <div className="productTitleItem">
               <h1>Contact Us</h1>
-              <h6 style={{ color: "blue" }}>Always Be In Touch With Us</h6>
-            </Col>
-            <Row className="py-5">
-              <Col lg={9} className="m-auto">
-                <Row>
-                  <Col lg={4}>
-                    <h6 className="h6">Location</h6>
-                    <p>Jakarta 0827 Block E</p>
-                    <h6 className="h6">Phone</h6>
-                    <p>089536763348</p>
-                    <h6 className="h6">Email</h6>
-                    <p>Chandrafajar262@gmail.com</p>
-                  </Col>
-                  <Col lg={7}>
-                    <Row>
-                      <Col lg={12}>
-                        <Form>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" />
-                          </Form.Group>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Example textarea</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
-                          </Form.Group>
-                        </Form>
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Row>
+              <h6 className="Homeh6" style={{ color: "blue" }}>
+                Always Be In Touch With Us
+              </h6>
+            </div>
+          </div>
+
+          <div className="homeContact">
+            <div className="homeLeft">
+              <h6 className="h6">Location</h6>
+              <p>Jakarta 0827 Block E</p>
+              <h6 className="h6">Phone</h6>
+              <p>089536763348</p>
+              <h6 className="h6">Email</h6>
+              <p>Chandrafajar262@gmail.com</p>
+            </div>
+
+            <div className="homeRight">
+              <div className="ContactInput">
+                <label>Email Adress</label>
+                <input type="text" placeholder="Email Adress" />
+                <label className="textareaHome">Example Textarea</label>
+                <textarea placeholder="Example Textarea"></textarea>
+              </div>
+            </div>
+          </div>
         </Container>
       </div>
       <div>

@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavbarComponents from "./components/Navbar/NavbarComponents";
 import Home from "./components/Pages/Home/Home";
@@ -12,12 +12,14 @@ import Blog from "./components/Pages/Blog/Blog";
 import SignIn from "./components/Pages/SignIn/SignIn";
 import Product from "./components/Pages/Product/Product";
 import NotFound from "./components/Pages/NotFound/NotFound";
+import Menu from "./components/Navbar/Menu/Menu";
 
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <Router>
-      <NavbarComponents />
-
+      <NavbarComponents menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="pages">
         <Switch>
           <Route path="/" exact component={Home} />

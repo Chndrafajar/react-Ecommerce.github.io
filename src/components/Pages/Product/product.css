@@ -265,14 +265,6 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.newProductCard {
-  margin: 10px;
-}
-
-.textCard {
-  text-align: center;
-}
-
 .btnCardProduct {
   align-items: center;
   justify-content: center;

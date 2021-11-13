@@ -39,10 +39,6 @@ h6 {
   background-color: #109ebb;
 }
 
-.btnHome button:hover {
-  background-color: rgb(41, 38, 38);
-  transition: 0.6s;
-}
 .newProductHome {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -155,6 +151,58 @@ h6 {
   margin: 10px;
 }
 
+.btnCardHome {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeH6 {
+  text-align: center;
+}
+
+.homeContact {
+  display: flex;
+}
+
+.homeLeft {
+  flex: 1;
+  margin: 10px;
+}
+
+.homeRight {
+  flex: 3;
+  margin: 10px;
+}
+
+.ContactInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.textareaHome {
+  margin-top: 10px;
+}
+
+.ContactInput input {
+  width: 60%;
+  height: 30px;
+  padding: 0 5px;
+}
+
+.ContactInput textarea {
+  width: 60%;
+  height: 100px;
+  padding: 0 5px;
+}
+
+.blogTitle .h1Home {
+  font-size: 60px;
+}
+
+/* 
+responisve */
 @media (max-width: 768px) {
   .CarousalItem h3 {
     font-size: 20px;
@@ -173,23 +221,24 @@ h6 {
 }
 
 @media (max-width: 468px) {
-  .btnHome button {
-    width: 100%;
-  }
   .newProductHome {
     margin-left: 20px;
   }
   .HomeCard {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .homeContact {
+    flex-direction: column;
+  }
+  .blogTitle .h1Home {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 992px) {
   .newProductHome {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .btnHome button {
-    width: 85%;
   }
 }
 
