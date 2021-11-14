@@ -125,6 +125,12 @@
   padding: 0 10px;
 }
 
+.newProductCard h6 {
+  font-weight: 500;
+  color: #f05a66;
+  font-family: "Lato", "Helvetica", "Arial", "sans-serif";
+}
+
 @media (max-width: 478px) {
   .filterProduct {
     flex-direction: column;
@@ -142,5 +148,8 @@
   }
   .nav {
     flex-wrap: nowrap;
+  }
+  .textCard h5 {
+    font-size: 16px;
   }
 }

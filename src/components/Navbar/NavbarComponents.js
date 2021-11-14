@@ -53,27 +53,29 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
 
       {/* Mobile */}
       <nav className="navbarBottom">
-        <Link to="/" className="linkNav">
+        <Link to="/" className="linkBottom">
           {" "}
           <span>
             <i class="bi bi-house-fill"></i>
           </span>
         </Link>
 
-        <Link to="/market" className="linkNav">
+        <Link to="/market" className="linkBottom">
           <span>
             <i class="bi bi-shop"></i>
           </span>
         </Link>
-
-        <Link to="/shopingcart" className="linkNav">
+        <span>
+          <i class="bi bi-search"></i>
+        </span>
+        <Link to="/shopingcart" className="linkBottom">
           {" "}
           <span>
             <i class="bi bi-cart"></i>
           </span>
         </Link>
 
-        <Link to="/signin" className="linkNav">
+        <Link to="/signin" className="linkBottom">
           {" "}
           <span>
             <i class="bi bi-person-circle"></i>

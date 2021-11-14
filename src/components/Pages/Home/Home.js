@@ -41,42 +41,32 @@ export default function Home() {
       {/* Component home 2 */}
       <div className="new py-5">
         <Container className="py-5">
-          <div className="newProductHome">
-            <div className="newProductCard">
-              <div>
-                <img src="asset/shop/23.jpg" alt="" />
-                <div className="btnHome">
-                  <button>Women</button>
-                </div>
-              </div>
+          <div className="brandTitle">
+            <div className="brandTitleItem">
+              <h1>Trusted Brand</h1>
+              <h6 className="homeH6" style={{ color: "blue" }}>
+                Be Healty Creatif Fashion
+              </h6>
             </div>
-            <div className="newProductCard">
-              <div>
-                <img src="asset/shop/15.jpg" alt="" />
-                <div className="btnHome">
-                  <button>Accesories</button>
-                </div>
-              </div>
+          </div>
+          <div className="homeBrand">
+            <div className="homeBrandItem">
+              <img src="asset/brand/1.png" alt="" />
             </div>
-            <div className="newProductCard">
-              <div>
-                <img src="asset/shop/4.jpg" alt="" />
-                <div className="btnHome">
-                  <button>Footwear</button>
-                </div>
-              </div>
+            <div className="homeBrandItem">
+              <img src="asset/brand/2.png" alt="" />
             </div>
-            <div className="newProductCard">
-              <div>
-                <img src="asset/shop/1.jpg" alt="" />
-                <div className="btnHome">
-                  <button>Watches</button>
-                </div>
-              </div>
+            <div className="homeBrandItem">
+              <img src="asset/brand/3.png" alt="" />
+            </div>
+            <div className="homeBrandItem">
+              <img src="asset/brand/4.png" alt="" />
             </div>
           </div>
         </Container>
       </div>
+
+      {/* Component home 3 */}
       <div className="productTitle">
         <div className="productTitleItem">
           <h1>Product Trending</h1>
@@ -85,8 +75,6 @@ export default function Home() {
           </h6>
         </div>
       </div>
-
-      {/* Component home 3 */}
       <div className="Product">
         <Container>
           <div className="newProductItem">

@@ -73,6 +73,9 @@
 @media (max-width: 620px) {
   .blogTitle {
     width: 300px;
-    margin-top: 40px;
+    margin-top: 10px;
+  }
+  .blogTop h1 {
+    font-size: 40px;
   }
 }
