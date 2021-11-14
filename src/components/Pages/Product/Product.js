@@ -48,7 +48,7 @@ export default function Product() {
     <>
       {/* component Product 1 */}
       <div className="ProductTitle mt-3">
-        <Navbar>
+        <div>
           <Container>
             <h5>
               Product{" "}
@@ -58,7 +58,7 @@ export default function Product() {
               <span className="TitleNav">Watches Fashion</span>
             </h5>
           </Container>
-        </Navbar>
+        </div>
       </div>
       <div>
         <Container>
