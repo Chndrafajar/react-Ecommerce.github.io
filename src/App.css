@@ -19,3 +19,9 @@ html {
 }
 
 /* responsif */
+
+@media (max-width: 468px) {
+  .pages {
+    margin-top: 20px;
+  }
+}
