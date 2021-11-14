@@ -77,4 +77,10 @@
     grid-template-columns: repeat(2, 1fr);
     margin-right: 25px;
   }
+  .blogCard h5 {
+    font-size: 15px;
+  }
+  .portfolioH4 {
+    font-size: 12px;
+  }
 }

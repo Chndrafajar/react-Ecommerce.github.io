@@ -1,10 +1,11 @@
 import "./home.css";
-import { Container, Carousel, Button } from "react-bootstrap";
+import { Container, Carousel } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
 
 export default function Home() {
   return (
     <>
+      {/* Component home 1 */}
       <div className="Home">
         <Carousel fade>
           <Carousel.Item>
@@ -13,35 +14,31 @@ export default function Home() {
               <div className="CarousalItem">
                 <h3>NEW SEASON</h3>
                 <h1>LookBook Collection</h1>
-                <Button variant="dark">Explore Now</Button>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src="asset/banner/parallax.jpg" alt="Second slide" />
-
             <Carousel.Caption>
               <div className="CarousalItem">
                 <h3>SUMMER 2020</h3>
                 <h1>New Arrival </h1>
-                <Button variant="dark">Explore Now</Button>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src="asset/banner/2.jpg" alt="Third slide" />
-
             <Carousel.Caption>
               <div className="CarousalItem">
                 <h3>SUMMER SALE</h3>
                 <h1>Save Up To 70%</h1>
               </div>
-              <Button variant="dark">Explore Now</Button>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>
 
+      {/* Component home 2 */}
       <div className="new py-5">
         <Container className="py-5">
           <div className="newProductHome">
@@ -49,7 +46,7 @@ export default function Home() {
               <div>
                 <img src="asset/shop/23.jpg" alt="" />
                 <div className="btnHome">
-                  <span>Women</span>
+                  <button>Women</button>
                 </div>
               </div>
             </div>
@@ -57,7 +54,7 @@ export default function Home() {
               <div>
                 <img src="asset/shop/15.jpg" alt="" />
                 <div className="btnHome">
-                  <span>Accesories</span>
+                  <button>Accesories</button>
                 </div>
               </div>
             </div>
@@ -65,7 +62,7 @@ export default function Home() {
               <div>
                 <img src="asset/shop/4.jpg" alt="" />
                 <div className="btnHome">
-                  <span>Footwear</span>
+                  <button>Footwear</button>
                 </div>
               </div>
             </div>
@@ -73,14 +70,13 @@ export default function Home() {
               <div>
                 <img src="asset/shop/1.jpg" alt="" />
                 <div className="btnHome">
-                  <span>Watches</span>
+                  <button>Watches</button>
                 </div>
               </div>
             </div>
           </div>
         </Container>
       </div>
-
       <div className="productTitle">
         <div className="productTitleItem">
           <h1>Product Trending</h1>
@@ -90,6 +86,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Component home 3 */}
       <div className="Product">
         <Container>
           <div className="newProductItem">
@@ -100,7 +97,6 @@ export default function Home() {
                 </div>
                 <div className="textCard">
                   <h5 className="mt-3">Clothes Fashion</h5>
-
                   <div className="IconStartHome ">
                     <span>
                       <i class="bi bi-star-fill"></i>
@@ -218,6 +214,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Component home 4 */}
       <div className="about">
         <Container className="py-5">
           <div className="productTitle">
@@ -228,7 +225,6 @@ export default function Home() {
               </h6>
             </div>
           </div>
-
           <div className="aboutItem">
             <div className="HomeCard">
               <div className="homeCardItem">
@@ -256,6 +252,7 @@ export default function Home() {
         </Container>
       </div>
 
+      {/* Component home 5 */}
       <div className="apple py-5 ">
         <Container className="py-5  ">
           <div className="blog">
@@ -267,7 +264,6 @@ export default function Home() {
           </div>
         </Container>
       </div>
-
       <div className="contact py-5">
         <Container className="py-5">
           <div className="productTitle">
@@ -278,7 +274,6 @@ export default function Home() {
               </h6>
             </div>
           </div>
-
           <div className="homeContact">
             <div className="homeLeft">
               <h6 className="h6">Location</h6>
@@ -288,7 +283,6 @@ export default function Home() {
               <h6 className="h6">Email</h6>
               <p>Chandrafajar262@gmail.com</p>
             </div>
-
             <div className="homeRight">
               <div className="ContactInput">
                 <label>Email Adress</label>
@@ -300,6 +294,8 @@ export default function Home() {
           </div>
         </Container>
       </div>
+
+      {/* Footer */}
       <div>
         <Footer />
       </div>

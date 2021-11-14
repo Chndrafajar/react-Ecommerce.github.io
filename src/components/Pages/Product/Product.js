@@ -46,6 +46,7 @@ export default function Product() {
 
   return (
     <>
+      {/* component Product 1 */}
       <div className="ProductTitle mt-3">
         <Navbar>
           <Container>
@@ -59,7 +60,6 @@ export default function Product() {
           </Container>
         </Navbar>
       </div>
-
       <div>
         <Container>
           <div className="detailProduct py-3">
@@ -169,6 +169,7 @@ export default function Product() {
         </Container>
       </div>
 
+      {/* component Product 2 */}
       <div className="itemInfo">
         <Container>
           <Tabs defaultActiveKey="description">
@@ -185,13 +186,13 @@ export default function Product() {
         </Container>
       </div>
 
+      {/* component Product 3 */}
       <div className="productTitle">
         <div className="productTitleItem">
           <h1>New product</h1>
           <h6 style={{ color: "blue" }}>Be Healty Creatif Fashion</h6>
         </div>
       </div>
-
       <div className="Product">
         <Container>
           <div className="newProductItem">
@@ -319,6 +320,8 @@ export default function Product() {
           <button className="btn1">Click For More</button>
         </div>
       </div>
+
+      {/* Footer */}
       <div>
         <Footer />
       </div>

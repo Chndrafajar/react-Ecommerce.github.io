@@ -6,6 +6,7 @@ import "./blog.css";
 export default function Blog() {
   return (
     <>
+      {/* component blog 1 */}
       <div className="blogTop">
         <Container className="py-5  ">
           <div className="blog">
@@ -18,6 +19,7 @@ export default function Blog() {
         </Container>
       </div>
 
+      {/* component blog 2 */}
       <div>
         <Container className="py-5">
           <div className="blogItem">
@@ -49,6 +51,7 @@ export default function Blog() {
               </div>
             </div>
 
+            {/* component blog 3 */}
             <div>
               <div className="blogCard">
                 <div className="imgArea">
@@ -79,6 +82,8 @@ export default function Blog() {
           </div>
         </Container>
       </div>
+
+      {/* Footer */}
       <div>
         <Footer />
       </div>

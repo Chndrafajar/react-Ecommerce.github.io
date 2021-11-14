@@ -234,6 +234,21 @@ responisve */
   .blogTitle .h1Home {
     font-size: 40px;
   }
+  .CarousalItem h3 {
+    font-size: 14px;
+  }
+  .CarousalItem h1 {
+    font-size: 19px;
+  }
+  .ContactInput input {
+    width: 90%;
+  }
+  .ContactInput textarea {
+    width: 90%;
+  }
+  .btnHome button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {

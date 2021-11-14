@@ -1,5 +1,6 @@
 import React from "react";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
 export default function NavbarComponents({ menuOpen, setMenuOpen }) {
   return (
@@ -7,20 +8,37 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
       <div className={"navbar " + (menuOpen && "active")}>
         <div className="navbarItem">
           <div className="navbarLeft">
-            <span>CFashion</span>
+            <span>Creatif Fashion</span>
           </div>
           <div className="navbarCenter">
             <div className="itemContainer">
-              <span>Home</span>
+              <Link to="/" className={"linkNav " + (menuOpen && "active")}>
+                {" "}
+                <span>Home</span>{" "}
+              </Link>
             </div>
             <div className="itemContainer">
-              <span>Market</span>
+              <Link to="/market" className={"linkNav " + (menuOpen && "active")}>
+                {" "}
+                <span>Market</span>
+              </Link>
             </div>
             <div className="itemContainer">
-              <span>Portfolio</span>
+              <Link to="/product" className={"linkNav " + (menuOpen && "active")}>
+                <span>Product</span>
+              </Link>
             </div>
             <div className="itemContainer">
-              <span>Blog</span>
+              <Link to="/portfolio" className={"linkNav " + (menuOpen && "active")}>
+                {" "}
+                <span>Portfolio</span>
+              </Link>
+            </div>
+            <div className="itemContainer">
+              <Link to="/blog" className={"linkNav " + (menuOpen && "active")}>
+                {" "}
+                <span>Blog</span>
+              </Link>
             </div>
           </div>
           <div className="navbarRight">
@@ -32,6 +50,36 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
           </div>
         </div>
       </div>
+
+      {/* Mobile */}
+      <nav className="navbarBottom">
+        <Link to="/" className="linkNav">
+          {" "}
+          <span>
+            <i class="bi bi-house-fill"></i>
+          </span>
+        </Link>
+
+        <Link to="/market" className="linkNav">
+          <span>
+            <i class="bi bi-shop"></i>
+          </span>
+        </Link>
+
+        <Link to="/shopingcart" className="linkNav">
+          {" "}
+          <span>
+            <i class="bi bi-cart"></i>
+          </span>
+        </Link>
+
+        <Link to="/signin" className="linkNav">
+          {" "}
+          <span>
+            <i class="bi bi-person-circle"></i>
+          </span>
+        </Link>
+      </nav>
     </>
   );
 }

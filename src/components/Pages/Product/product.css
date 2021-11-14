@@ -9,6 +9,7 @@
 
 .ProductTitle .TitleNav {
   font-weight: 500;
+  z-index: 1;
 }
 
 .ProductTitle .TitleNav:hover {
@@ -279,6 +280,15 @@
   }
   .newProductItem {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .detailProduct {
+    flex-direction: column;
+  }
+  .review {
+    flex-direction: column;
+  }
+  .startReview {
+    text-align: center;
   }
 }
 
