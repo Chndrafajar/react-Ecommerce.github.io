@@ -139,6 +139,8 @@
   margin-left: 4px;
 }
 
-.cartItems {
-  overflow-x: auto;
+@media (max-width: 768px) {
+  .cartItems {
+    overflow-x: auto;
+  }
 }

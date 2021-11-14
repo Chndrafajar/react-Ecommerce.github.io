@@ -241,10 +241,10 @@ responisve */
     font-size: 19px;
   }
   .ContactInput input {
-    width: 90%;
+    width: 100%;
   }
   .ContactInput textarea {
-    width: 90%;
+    width: 100%;
   }
   .btnHome button {
     width: 95%;

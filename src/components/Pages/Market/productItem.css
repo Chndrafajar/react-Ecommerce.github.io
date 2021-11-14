@@ -59,6 +59,27 @@
   font-weight: 600;
 }
 
+.swal-icon {
+  overflow: hidden;
+}
+
+.swal-icon--warning__body {
+  overflow: hidden;
+}
+
+.swal-icon--success__ring {
+  width: 80px;
+  height: 80px;
+  border: 4px solid hsla(98, 55%, 69%, 0.2);
+  border-radius: 50%;
+  box-sizing: content-box;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  z-index: 2;
+  overflow: hidden;
+}
+
 .btnMrket {
   height: 45px;
   width: 200px;
@@ -118,5 +139,8 @@
   }
   .filterProductLeft .bi {
     font-size: 16px;
+  }
+  .nav {
+    flex-wrap: nowrap;
   }
 }
