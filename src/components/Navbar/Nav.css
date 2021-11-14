@@ -13,7 +13,7 @@
 
 .navbarCenter {
   display: flex;
-  margin-right: 95px;
+  margin-right: 5px;
 }
 
 .navbarCenter .itemContainer span {
@@ -61,6 +61,41 @@
 .itemContainer span {
   font-size: 15px;
   font-weight: 500;
+}
+
+.navbarRight {
+  display: flex;
+}
+
+.navRightSearch {
+  margin-right: 20px;
+}
+
+.navRightSearch label input {
+  width: 170px;
+  height: 30px;
+  border-radius: 20px;
+  padding: 0 10px;
+  border: 1px solid grey;
+}
+
+.btn3 {
+  border: none;
+  background-color: brown;
+  border-radius: 20px;
+  margin-left: -30px;
+  height: 30px;
+  color: white;
+}
+
+.navRightSearch label {
+  position: relative;
+}
+
+.navRightSearch label .bi {
+  position: inherit;
+
+  font-size: 20px;
 }
 
 .navbarRight .pemalang {
@@ -154,5 +189,11 @@
   }
   .navbarBottom {
     display: block;
+  }
+  .navRightSearch label input {
+    width: 100px;
+  }
+  .navRightSearch {
+    margin-left: -20px;
   }
 }

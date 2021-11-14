@@ -8,7 +8,7 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
       <div className={"navbar " + (menuOpen && "active")}>
         <div className="navbarItem">
           <div className="navbarLeft">
-            <span>Creatif Fashion</span>
+            <span>CFashion</span>
           </div>
           <div className="navbarCenter">
             <div className="itemContainer">
@@ -42,6 +42,12 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
             </div>
           </div>
           <div className="navbarRight">
+            <div className="navRightSearch">
+              <label>
+                <input type="text" placeholder="search" />
+                <button className="btn3">Search</button>
+              </label>
+            </div>
             <div className="pemalang" onClick={() => setMenuOpen(!menuOpen)}>
               <span className={"item1 " + (menuOpen && "active")}></span>
               <span className={"item2 " + (menuOpen && "active")}></span>

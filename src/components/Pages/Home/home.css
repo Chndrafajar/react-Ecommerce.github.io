@@ -180,6 +180,9 @@ responisve */
     display: flex;
     flex-direction: column;
   }
+  .homeBrand {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 468px) {
