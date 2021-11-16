@@ -71,9 +71,6 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
             <i class="bi bi-shop"></i>
           </span>
         </Link>
-        <span>
-          <i class="bi bi-search"></i>
-        </span>
         <Link to="/shopingcart" className="linkBottom">
           {" "}
           <span>

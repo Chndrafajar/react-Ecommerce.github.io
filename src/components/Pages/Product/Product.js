@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar, Tabs, Tab } from "react-bootstrap";
+import { Container, Tabs, Tab } from "react-bootstrap";
 import "./product.css";
 import Description from "./TabContent/Description";
 import Information from "./TabContent/Information";
