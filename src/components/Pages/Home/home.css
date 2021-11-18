@@ -217,6 +217,9 @@ responisve */
   .homeBrand {
     flex-wrap: wrap;
   }
+  .btn1 {
+    width: 35%;
+  }
 }
 
 @media (max-width: 992px) {
