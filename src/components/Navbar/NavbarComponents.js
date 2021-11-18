@@ -44,7 +44,7 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
           <div className="navbarRight">
             <div className="navRightSearch">
               <label>
-                <input type="text" placeholder="search" />
+                <input type="text" placeholder="search..." className="px-3" />
                 <button className="btn3">Search</button>
               </label>
             </div>
@@ -60,7 +60,6 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
       {/* Mobile */}
       <nav className="navbarBottom">
         <Link to="/" className="linkBottom">
-          {" "}
           <span>
             <i class="bi bi-house-fill"></i>
           </span>
@@ -72,14 +71,11 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
           </span>
         </Link>
         <Link to="/shopingcart" className="linkBottom">
-          {" "}
           <span>
             <i class="bi bi-cart"></i>
           </span>
         </Link>
-
         <Link to="/signin" className="linkBottom">
-          {" "}
           <span>
             <i class="bi bi-person-circle"></i>
           </span>

@@ -22,3 +22,9 @@
 .checkout {
   margin-right: 20px;
 }
+
+@media (max-width: 400px) {
+  .containerRecipe {
+    height: 200px;
+  }
+}

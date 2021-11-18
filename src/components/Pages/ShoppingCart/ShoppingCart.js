@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./cart.css";
 import { removeItem, addQuantity, subtractQuantity } from "../../actions/cartActions";
 import Recipe from "../Recipe/Recipe";
@@ -25,80 +25,53 @@ class ShoppingCart extends Component {
     let addedItems = this.props.items.length ? (
       this.props.items.map((item) => {
         return (
-          <div className="listCartBottom">
-            <table>
-              <thead>
-                <tr>
-                  <td>Id</td>
+          <div className="shopCart">
+            <div className="shopcartItem">
+              <div className="shopCartLeft">
+                <img src={item.img} alt={item.title} />
+              </div>
+              <div className="shopCartDesc">
+                <h2>{item.title}</h2>
+                <h3>${item.price}</h3>
+              </div>
+              <div className="shopCartCenter">
+                <span>
+                  <Link to="/shopingcart">
+                    <button
+                      className="btnGreen"
+                      onClick={() => {
+                        this.handleAddQuantity(item.id);
+                      }}
+                    >
+                      <i class="bi bi-plus"></i>
+                    </button>
+                  </Link>
+                </span>
 
-                  <td>Product</td>
-
-                  <td>Price</td>
-
-                  <td>Quantity</td>
-
-                  <td>Add & Min</td>
-
-                  <td>Remove</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <span className="listCartId">{item.id}</span>
-                  </td>
-                  <td>
-                    <div className="listCartItem">
-                      <img src={item.img} alt={item.title} className="listCartImg" />
-                      <span>{item.title}</span>
-                    </div>
-                  </td>
-                  <td>{item.price}</td>
-                  <td>{item.quantity}</td>
-                  <td>
-                    <div className="CartItemBtn">
-                      <span>
-                        <Link to="/shopingcart">
-                          <Button
-                            variant="success"
-                            onClick={() => {
-                              this.handleAddQuantity(item.id);
-                            }}
-                          >
-                            <i class="bi bi-plus"></i>
-                          </Button>
-                        </Link>
-                      </span>
-
-                      <span>
-                        <Link to="/shopingcart">
-                          <Button
-                            variant="danger"
-                            onClick={() => {
-                              this.handleSubtractQuantity(item.id);
-                            }}
-                          >
-                            <i class="bi bi-dash"></i>
-                          </Button>
-                        </Link>
-                      </span>
-                    </div>
-                  </td>
-                  <td>
-                    <div className="CartItemRemove">
-                      <Button
-                        variant="danger"
-                        onClick={() => {
-                          this.handleRemove(item.id);
-                        }}
-                      >
-                        <i class="bi bi-trash"></i>
-                      </Button>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                <h4>{item.quantity}</h4>
+                <span>
+                  <Link to="/shopingcart">
+                    <button
+                      className="btnRed"
+                      onClick={() => {
+                        this.handleSubtractQuantity(item.id);
+                      }}
+                    >
+                      <i class="bi bi-dash"></i>
+                    </button>
+                  </Link>
+                </span>
+              </div>
+              <div className="shopCartRight">
+                <span
+                  onClick={() => {
+                    this.handleRemove(item.id);
+                  }}
+                >
+                  <i class="bi bi-x-lg"></i>
+                </span>
+              </div>
+            </div>
           </div>
         );
       })

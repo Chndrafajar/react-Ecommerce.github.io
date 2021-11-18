@@ -8,43 +8,36 @@ export default function Menu({ menuOpen, setMenuOpen }) {
       <ul>
         <li onClick={() => setMenuOpen(false)}>
           <Link to="/" className="link">
-            {" "}
             <span>Home</span>
           </Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <Link to="/market" className="link">
-            {" "}
             <span>Market</span>
           </Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <Link to="/portfolio" className="link">
-            {" "}
             <span>Portfolio</span>
           </Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <Link to="/product" className="link">
-            {" "}
             <span>Product</span>
           </Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <Link to="/blog" className="link">
-            {" "}
             <span>Blog</span>
           </Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <Link to="/shopingcart" className="link">
-            {" "}
             <span>Cart</span>
           </Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <Link to="/signin" className="link">
-            {" "}
             <span>Login</span>
           </Link>
         </li>

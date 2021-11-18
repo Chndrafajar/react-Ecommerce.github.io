@@ -29,7 +29,7 @@
 
 .btn1 {
   height: 45px;
-  width: 30%;
+  width: 20%;
   border: none;
   outline: none;
   background-color: #0dcaf0;
@@ -182,6 +182,9 @@ responisve */
   }
   .homeBrand {
     flex-wrap: wrap;
+  }
+  .btn1 {
+    font-size: 15px;
   }
 }
 
