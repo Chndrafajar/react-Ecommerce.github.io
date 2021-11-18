@@ -11,7 +11,21 @@ class ShoppingCart extends Component {
   //to remove the item completely
   handleRemove = (id) => {
     this.props.removeItem(id);
-    swal("Success!", "Successfully Removed Product From Cart!", "warning");
+    swal({
+      title: "Are you sure?",
+      text: "Remove your shopping from cart!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        swal("Succesfully deleted shopping!", {
+          icon: "success",
+        });
+      } else {
+        swal("Your shopping cart is safe!");
+      }
+    });
   };
   //to add the quantity
   handleAddQuantity = (id) => {
