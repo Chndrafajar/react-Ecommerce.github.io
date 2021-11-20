@@ -57,7 +57,7 @@ export default function PortFolio() {
   return (
     <>
       <div>
-        <Container className="py-3">
+        <Container className="py-3s">
           <div className="portfolioList">
             <ul>
               {list.map((item) => (

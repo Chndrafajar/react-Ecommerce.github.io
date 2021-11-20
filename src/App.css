@@ -56,6 +56,10 @@ html {
   color: #f2b827;
 }
 
+.pages {
+  margin-top: 50px;
+}
+
 /* responsif */
 
 @media (max-width: 468px) {
