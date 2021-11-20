@@ -1,13 +1,12 @@
 import "./home.css";
-import { Container, Carousel } from "react-bootstrap";
+import { Container, Carousel, } from "react-bootstrap";
 import Footer from "../../Footer/Footer";
 import { useState } from "react";
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
 
   return (
-    <>
+      <>
       {/* Component home 1 */}
       <div className="Home">
         <Carousel fade>
