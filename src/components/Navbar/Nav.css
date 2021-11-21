@@ -67,17 +67,40 @@
   display: flex;
 }
 
-.navRightSearch {
-  margin-right: 20px;
+.NavRightIcon span {
+  padding: 0 8px;
 }
 
-.navRightSearch label input {
-  width: 170px;
-  height: 30px;
-  border-radius: 10px;
+.NavRightIcon span .bi {
+  font-size: 25px;
+}
+
+.NavRightIcon span .bi:hover {
+  color: red;
+}
+
+.modalSearch {
+  display: flex;
+}
+
+.modalSearch input {
+  width: 100%;
+  height: 40px;
   padding: 0 10px;
-  border: 1px solid grey;
-  z-index: 2;
+}
+
+.modalSearch span .bi {
+  font-size: 25px;
+}
+
+.modalSearch span {
+  margin-left: -40px;
+}
+
+.NavRightIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn3 {
@@ -88,16 +111,6 @@
   height: 30px;
   color: white;
   z-index: 3;
-}
-
-.navRightSearch label {
-  position: relative;
-}
-
-.navRightSearch label .bi {
-  position: inherit;
-
-  font-size: 20px;
 }
 
 .navbarRight .pemalang {
@@ -115,6 +128,7 @@
   background-color: black;
   transform-origin: left;
   transition: all 1s;
+  display: none;
 }
 
 .navbar.active {
@@ -150,7 +164,7 @@
 }
 
 .navbarBottom span {
-  padding: 23px;
+  padding: 18px;
 }
 
 .navbarBottom span .bi {
@@ -176,6 +190,12 @@
   }
   .navbarBottom {
     display: block;
+  }
+  .navbarRight .pemalang span {
+    display: block;
+  }
+  .NavRightIcon {
+    display: none;
   }
 }
 

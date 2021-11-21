@@ -18,12 +18,7 @@ class ProductItem extends Component {
     let itemList = this.props.items.map((item) => {
       return (
         <div className="newProductCard">
-          <div
-            className="Card  border-0  mb-2"
-            onClick={() => {
-              this.handleClick(item.id);
-            }}
-          >
+          <div className="Card  border-0  mb-2">
             <div className="imgArea">
               <img src={item.img} alt={item.title} className="img-fluid" />
             </div>
@@ -49,6 +44,14 @@ class ProductItem extends Component {
               </div>
               <h6>${item.price}</h6>
             </div>
+            <button
+              className="btnAdd"
+              onClick={() => {
+                this.handleClick(item.id);
+              }}
+            >
+              Add To Cart
+            </button>
           </div>
         </div>
       );

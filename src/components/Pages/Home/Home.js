@@ -103,6 +103,7 @@ export default function Home() {
                   </div>
                   <h6>$29.99</h6>
                 </div>
+                <button className="btnAdd">Add To Cart</button>
               </div>
             </div>
             <div className="newProductCard">
@@ -132,6 +133,7 @@ export default function Home() {
                   </div>
                   <h6>$29.99</h6>
                 </div>
+                <button className="btnAdd">Add To Cart</button>
               </div>
             </div>
             <div className="newProductCard">
@@ -161,6 +163,7 @@ export default function Home() {
                   </div>
                   <h6>$29.99</h6>
                 </div>
+                <button className="btnAdd">Add To Cart</button>
               </div>
             </div>
             <div className="newProductCard">
@@ -190,6 +193,7 @@ export default function Home() {
                   </div>
                   <h6>$29.99</h6>
                 </div>
+                <button className="btnAdd">Add To Cart</button>
               </div>
             </div>
           </div>

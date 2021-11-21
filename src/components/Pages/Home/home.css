@@ -186,6 +186,15 @@ responisve */
   .btn1 {
     font-size: 15px;
   }
+  .ContactInput input {
+    width: 100%;
+  }
+  .ContactInput textarea {
+    width: 100%;
+  }
+  .homeContact {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 468px) {
@@ -196,9 +205,6 @@ responisve */
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .homeContact {
-    flex-direction: column;
-  }
   .blogTitle .h1Home {
     font-size: 40px;
   }
@@ -208,17 +214,15 @@ responisve */
   .CarousalItem h1 {
     font-size: 19px;
   }
-  .ContactInput input {
-    width: 100%;
-  }
-  .ContactInput textarea {
-    width: 100%;
-  }
+
   .homeBrand {
     flex-wrap: wrap;
   }
   .btn1 {
     width: 35%;
+  }
+  .productTitleItem h1 {
+    font-size: 20px;
   }
 }
 

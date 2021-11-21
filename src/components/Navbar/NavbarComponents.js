@@ -1,8 +1,12 @@
 import React from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Modal } from "react-bootstrap";
 
 export default function NavbarComponents({ menuOpen, setMenuOpen }) {
+  const [lgShow, setLgShow] = useState(false);
+
   return (
     <>
       <div className={"navbar " + (menuOpen && "active")}>
@@ -42,11 +46,20 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
             </div>
           </div>
           <div className="navbarRight">
-            <div className="navRightSearch">
-              <label>
-                <input type="text" placeholder="search..." className="px-3" />
-                <button className="btn3">Search</button>
-              </label>
+            <div className="NavRightIcon">
+              <span onClick={() => setLgShow(true)}>
+                <i class="bi bi-search"></i>
+              </span>
+              <Link to="/shopingcart" className="linkBottom">
+                <span>
+                  <i class="bi bi-cart"></i>
+                </span>
+              </Link>
+              <Link to="/signin" className="linkBottom">
+                <span>
+                  <i class="bi bi-person-circle"></i>
+                </span>
+              </Link>
             </div>
             <div className="pemalang" onClick={() => setMenuOpen(!menuOpen)}>
               <span className={"item1 " + (menuOpen && "active")}></span>
@@ -56,6 +69,19 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      <Modal size="lg" show={lgShow} onHide={() => setLgShow(false)} aria-labelledby="example-modal-sizes-title-lg">
+        <Modal.Body>
+          <div className="modalSearch">
+            <input type="text" placeholder="Search..." />
+            <span>
+              <i class="bi bi-search"></i>
+            </span>
+          </div>
+        </Modal.Body>
+      </Modal>
+      {/* Modal */}
 
       {/* Mobile */}
       <nav className="navbarBottom">
@@ -70,6 +96,9 @@ export default function NavbarComponents({ menuOpen, setMenuOpen }) {
             <i class="bi bi-shop"></i>
           </span>
         </Link>
+        <span onClick={() => setLgShow(true)}>
+          <i class="bi bi-search"></i>
+        </span>
         <Link to="/shopingcart" className="linkBottom">
           <span>
             <i class="bi bi-cart"></i>
