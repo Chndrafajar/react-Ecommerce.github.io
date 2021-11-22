@@ -57,13 +57,13 @@ html {
 }
 
 .pages {
-  margin-top: 63px;
+  margin-top: 61px;
 }
 
 /* responsif */
 
 @media (max-width: 468px) {
   .pages {
-    margin-top: 58px;
+    margin-top: 56px;
   }
 }
